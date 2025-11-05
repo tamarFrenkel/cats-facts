@@ -46,12 +46,12 @@ def job():
     file_path = download_data()
     send_email(file_path)
 
-# schedule.every()day.at("09:00".do(job))
+schedule.every()day.at("09:00".do(job))
 
 print("🤖 the bot is activate... (running once now)")
 job()
 print("✅ finished running once successfully!")
 
-# while True:
-#     schedule.run_pending()
-#     time.sleep(1)
+ while True:
+    schedule.run_pending()
+    time.sleep(1)
